@@ -7,11 +7,10 @@ const page = async () => {
   const userData = {
     id: user?.id,
     objectId: userInfo?._id,
-    username: userInfo?.username, || user?.username,
+    username: userInfo?.username || user?.username,
     name: userInfo?.name || user?.firstName || "",
-  bio: userInfo?.bio || "",
-    image: userinfo?.image|| user.imageUrl,
-    
+    bio: userInfo?.bio || "",
+    image: userInfo?.image || user.imageUrl,
   };
   return (
     <main className="mx-auto flex max-w-3xl flex-col justify-start pt-10 py-20">
